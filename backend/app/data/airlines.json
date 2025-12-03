@@ -1,0 +1,22 @@
+[
+  {"code": "AA", "name": "American Airlines", "logo": "aa.svg"},
+  {"code": "UA", "name": "United Airlines", "logo": "ua.svg"},
+  {"code": "DL", "name": "Delta Air Lines", "logo": "dl.svg"},
+  {"code": "BA", "name": "British Airways", "logo": "ba.svg"},
+  {"code": "LH", "name": "Lufthansa", "logo": "lh.svg"},
+  {"code": "AF", "name": "Air France", "logo": "af.svg"},
+  {"code": "KL", "name": "KLM", "logo": "kl.svg"},
+  {"code": "EK", "name": "Emirates", "logo": "ek.svg"},
+  {"code": "SQ", "name": "Singapore Airlines", "logo": "sq.svg"},
+  {"code": "QF", "name": "Qantas", "logo": "qf.svg"},
+  {"code": "CX", "name": "Cathay Pacific", "logo": "cx.svg"},
+  {"code": "JL", "name": "Japan Airlines", "logo": "jl.svg"},
+  {"code": "NH", "name": "ANA", "logo": "nh.svg"},
+  {"code": "AC", "name": "Air Canada", "logo": "ac.svg"},
+  {"code": "IB", "name": "Iberia", "logo": "ib.svg"},
+  {"code": "AZ", "name": "ITA Airways", "logo": "az.svg"},
+  {"code": "LX", "name": "Swiss", "logo": "lx.svg"},
+  {"code": "TK", "name": "Turkish Airlines", "logo": "tk.svg"},
+  {"code": "EY", "name": "Etihad Airways", "logo": "ey.svg"},
+  {"code": "QR", "name": "Qatar Airways", "logo": "qr.svg"}
+]
