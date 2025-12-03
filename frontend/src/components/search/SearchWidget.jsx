@@ -51,10 +51,12 @@ export default function SearchWidget() {
         cabin_class: 'economy'
       }
 
-      const results = await flightService.search(params)
-      setResults(results)
+      const response = await flightService.search(params)
+      // Extract the data from the response wrapper
+      setResults(response.data || response)
       navigate('/search')
     } catch (error) {
+      console.error('Search error:', error)
       toast.error('Failed to search flights. Please try again.')
       setLoading(false)
     }

@@ -4,6 +4,7 @@ import { ArrowLeft, SlidersHorizontal, ArrowUpDown, Loader2 } from 'lucide-react
 import { format } from 'date-fns'
 import FlightCard from '../components/flights/FlightCard'
 import { useSearchStore } from '../store/searchStore'
+import { useBookingStore } from '../store/bookingStore'
 import { formatPrice } from '../utils/formatters'
 
 const sortOptions = [
@@ -16,6 +17,7 @@ const sortOptions = [
 export default function SearchResultsPage() {
   const navigate = useNavigate()
   const { origin, destination, departureDate, returnDate, results, loading, passengers } = useSearchStore()
+  const { selectFlight } = useBookingStore()
   const [sortBy, setSortBy] = useState('best')
   const [showFilters, setShowFilters] = useState(false)
   const [stopsFilter, setStopsFilter] = useState('any')
@@ -69,9 +71,9 @@ export default function SearchResultsPage() {
     }
   })
 
-  const handleSelectFlight = (flight) => {
-    console.log('Selected flight:', flight)
-    // TODO: Navigate to booking flow
+  const handleSelectFlight = (flight, fareClass = 'economy_standard') => {
+    selectFlight(flight, fareClass)
+    navigate('/booking/passengers')
   }
 
   const lowestPrice = outbound.length > 0
